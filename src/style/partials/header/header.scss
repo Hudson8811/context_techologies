@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw(90);
+  background-color: #fff;
+  box-shadow: 0 0 vw(20) rgba(0, 0, 0, 0.1);
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-logo {
+    display: block;
+    width: vw(250);
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    max-width: vw(486);
+    margin: 0 auto;
+    font-family: 'Conv_12462';
+
+    &-item {
+      display: block;
+      width: max-content;
+    }
+
+    &-link {
+      display: block;
+      font-size: vw(14);
+      line-height: vw(26);
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #5c6579;
+      cursor: pointer;
+    }
+  }
+
+  &-social_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    max-width: vw(163);
+
+    &-item {
+      display: block;
+
+      &:nth-child(1) {
+        .header-social_menu-link {
+          img {
+            width: vw(13);
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .header-social_menu-link {
+          img {
+            width: vw(25);
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .header-social_menu-link {
+          img {
+            width: vw(22);
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .header-social_menu-link {
+          img {
+            width: vw(13);
+          }
+        }
+      }
+    }
+
+    &-link {
+      display: block;
+
+      img {
+        display: block;
+      }
+    }
+  }
+
+  &-search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 vw(21) 0 vw(25);
+    border-left: vw(1) solid #fdfdfd;
+    border-right: vw(1) solid #fdfdfd;
+    margin: 0 vw(21) 0 0;
+
+    &-icon {
+      display: block;
+      width: vw(20);
+    }
+
+    &-input {
+      box-sizing: border-box;
+      display: block;
+      height: vw(40);
+      font-size: vw(14);
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      border-bottom: vw(1) solid #000;
+      transition: 0.2s linear;
+      width: 0;
+      opacity: 0;
+      padding: 0;
+      font-family: 'Roboto';
+
+      &:focus {
+        padding: 0 vw(10);
+        width: vw(100);
+        margin-right: vw(15);
+        opacity: 1;
+      }
+    }
+  }
+}
