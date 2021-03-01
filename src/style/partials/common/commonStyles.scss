@@ -76,6 +76,10 @@ body {
     padding: vw(62) 0 vw(270);
     background: #f3f7f9 50% 38% / cover url(../img/slider-bg.png) no-repeat;
 
+    @media screen and (max-height: 700px) {
+      padding-bottom: vw(240);
+    }
+
     .container {
       position: relative;
       display: flex;
