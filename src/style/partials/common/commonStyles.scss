@@ -119,10 +119,27 @@ body {
   z-index: 2;
   margin-top: vw(-155);
 
+  &-btn {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9297a1;
+    font-size: vw(14);
+    line-height: vw(26);
+    font-family: 'Roboto';
+    width: vw(146);
+    height: vw(40);
+    border: vw(1) solid #5c6579;
+    border-radius: vw(3);
+    text-decoration: none;
+  }
+
   &-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
+    flex-wrap: wrap;
   }
 
   &-row {
@@ -130,23 +147,21 @@ body {
     width: calc(33.3333333% - 1.04vw / 3);
     margin-right: auto;
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    &:nth-child(3n + 1) {
+    &:nth-child(4n + 1) {
       .grid-col {
         height: 100%;
       }
     }
 
-    &:nth-child(3n + 2) {
+    &:nth-child(4n + 2) {
       .grid-col {
         height: calc(50% - 0.26vw);
       }
     }
 
-    &:nth-child(3n + 3) {
+    &:nth-child(4n + 3) {
+      margin-right: 0;
+
       .grid-col {
         &:nth-child(1) {
           height: calc(100% - 4.16vw);
@@ -159,6 +174,65 @@ body {
           border-radius: vw(5);
           padding: 0;
         }
+      }
+    }
+
+    &:nth-child(4n + 4) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      width: 100%;
+      height: vw(366);
+      margin-top: vw(10);
+      margin-bottom: vw(10);
+
+      .grid-col {
+        &:nth-child(1) {
+          width: calc(66.7% - 0.26vw);
+        }
+
+        &:nth-child(2) {
+          width: calc(33.3% - 0.26vw);
+          margin-top: 0;
+        }
+      }
+
+      .grid-col + .grid-col {
+        margin-left: vw(10);
+      }
+
+      h2 {
+        display: block;
+        margin-bottom: vw(38);
+        font-weight: bold;
+        font-size: vw(25);
+        line-height: vw(26);
+        color: #5c6579;
+        text-transform: uppercase;
+      }
+
+      p {
+        display: block;
+        margin-bottom: vw(18);
+        font-weight: bold;
+        font-size: vw(22);
+        line-height: vw(26);
+        color: #9297a1;
+      }
+
+      span {
+        display: block;
+        margin-bottom: vw(45);
+        font-size: vw(16);
+        line-height: vw(26);
+        color: #9297a1;
+      }
+
+      b {
+        display: block;
+        font-weight: bold;
+        font-size: vw(110);
+        color: #9297a1;
       }
     }
   }
@@ -182,14 +256,14 @@ body {
       line-height: vw(16);
       text-transform: uppercase;
     }
+  }
 
-    a {
-      display: block;
-      font-weight: 500;
-      font-size: vw(16);
-      line-height: vw(26);
-      color: #fff;
-      text-decoration: none;
-    }
+  &-more {
+    display: block;
+    font-weight: 500;
+    font-size: vw(16);
+    line-height: vw(26);
+    color: #fff;
+    text-decoration: none;
   }
 }
