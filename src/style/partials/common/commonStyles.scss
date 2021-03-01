@@ -73,7 +73,7 @@ body {
   &-block {
     position: relative;
     box-sizing: border-box;
-    padding: vw(132) 0 vw(270);
+    padding: vw(62) 0 vw(270);
     background: #f3f7f9 50% 38% / cover url(../img/slider-bg.png) no-repeat;
 
     .container {
@@ -146,6 +146,7 @@ body {
     height: vw(530);
     width: calc(33.3333333% - 1.04vw / 3);
     margin-right: auto;
+    text-decoration: none;
 
     &:nth-child(4n + 1) {
       .grid-col {
@@ -240,10 +241,11 @@ body {
   &-col {
     box-sizing: border-box;
     padding: vw(40) vw(30);
-
+    display: block;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-decoration: none;
 
     & + & {
       margin-top: 0.52vw;
