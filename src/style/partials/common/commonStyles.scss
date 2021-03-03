@@ -5,7 +5,7 @@ body {
 
 .container {
   display: block;
-  max-width: vw(1180);
+  max-width: vw(1410);
   margin: 0 auto;
   flex-grow: 1;
 }
@@ -16,7 +16,8 @@ body {
 
 .slider {
   position: static;
-  width: vw(490);
+  width: vw(570);
+  margin-top: vw(23);
 
   .slick-dots {
     position: absolute;
@@ -56,7 +57,7 @@ body {
 
   p {
     display: block;
-    margin-bottom: vw(25);
+    margin-bottom: vw(14);
     font-weight: bold;
     font-size: vw(22);
     list-style: vw(26);
@@ -65,7 +66,7 @@ body {
 
   span {
     display: block;
-    font-size: vw(14);
+    font-size: vw(16);
     line-height: vw(26);
     color: #9297a1;
   }
@@ -73,7 +74,7 @@ body {
   &-block {
     position: relative;
     box-sizing: border-box;
-    padding: vw(32) 0 vw(270);
+    padding: 58px 0 vw(270);
     background: #f3f7f9 50% 38% / cover url(../img/slider-bg.png) no-repeat;
 
     @media screen and (max-height: 700px) {
@@ -91,18 +92,18 @@ body {
   &-title {
     position: relative;
     display: block;
-    width: vw(650);
+    width: vw(800);
     margin-right: vw(40);
     flex-shrink: 0;
     color: #5c6579;
-    font-size: vw(40);
+    font-size: vw(50);
     text-transform: uppercase;
 
     &:after {
       content: '';
       position: absolute;
       right: 0;
-      top: 0;
+      top: vw(8);
       display: block;
       width: vw(4);
       height: vw(100);
@@ -208,7 +209,7 @@ body {
 
       h2 {
         display: block;
-        margin-bottom: vw(38);
+        margin-bottom: vw(28);
         font-weight: bold;
         font-size: vw(25);
         line-height: vw(26);
@@ -227,7 +228,7 @@ body {
 
       span {
         display: block;
-        margin-bottom: vw(45);
+        margin-bottom: vw(35);
         font-size: vw(16);
         line-height: vw(26);
         color: #9297a1;
@@ -244,7 +245,7 @@ body {
 
   &-col {
     box-sizing: border-box;
-    padding: vw(40) vw(30);
+    padding: vw(39);
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
