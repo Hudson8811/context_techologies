@@ -74,7 +74,7 @@ body {
   &-block {
     position: relative;
     box-sizing: border-box;
-    padding: 135px 0 vw(270);
+    padding: vw(135) 0 vw(270);
     background: #f3f7f9 50% 50% / cover url(../img/slider-bg.png) no-repeat;
 
     .container {
